@@ -1,0 +1,38 @@
+body {
+    font-family: system-ui;
+    background: #F1B6AC;
+    color: white;
+    text-align: center;
+  }
+  
+  label{
+    padding: 5px;
+    color: #588061;
+  }
+  
+  input {
+    background: #FDE9EA;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 6px;
+  }
+  
+form {
+    background: #FFDDD6;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button{
+    background: #588061;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+}

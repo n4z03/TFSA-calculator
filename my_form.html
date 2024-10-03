@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="my_form.css">
+        <script src="my_form.js"></script>
+    </head>
+
+    <body>
+        <h1>TFSA contribution calculator</h1>
+            <form>
+            <label for="birth_year">birth year: </label><br>
+            <input type="number" oninput="validateYear(this)" name="birth_year" id="birth_year" required>
+
+            <br><br>
+
+            <label for="total_contribution">how much have you contributed?</label><br>
+            <input type="number" min="0" max="95000" oninput="validateNumber(this)" id="total_contribution" name="total_contribution" required>
+
+            <br><br>
+
+            <label for="withdrawn_before">how much have you withdrawn before this year?</label><br>
+            <input type="number" min="0" max="95000" oninput="validateNumber(this)" id="withdrawn_before" name="withdrawn_before" required>
+
+            <br><br>
+
+            <label for="withdrawn_this_year">how much have you withdrawn within this year?</label><br>
+            <input type="number" min="0" max="95000" oninput="validateNumber(this)" id="withdrawn_this_year" name="withdrawn_this_year" required>
+
+
+            <br><br><br>   
+            <button name="form_submit" type="submit">calculate</button>
+            </form>
+    </body>
+</html>
